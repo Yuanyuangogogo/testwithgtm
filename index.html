@@ -164,16 +164,7 @@
     <script>
         const cart = [];
 
-        function addToCart(productName, productPrice) {
-            cart.push({ name: productName, price: productPrice });
-            updateCart();
-            console.log("iamhere")
-            data = {
-                'event_type':'add to basket'
-            }
-            amplitude.track(data)
-
-        }
+    
 
         function updateCart() {
             const cartItems = document.getElementById('cart-items');
